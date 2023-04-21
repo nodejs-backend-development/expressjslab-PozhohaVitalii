@@ -9,6 +9,7 @@ async function getData (user_id,token1) {
         'Authorization':`Bearer ${token1}`
     }
     });
+    
     const data = await response1.json();
    // console.log(data);
     return data;
