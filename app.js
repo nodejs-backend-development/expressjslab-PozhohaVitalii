@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use((req, res, next) => {
     if (req.url){
         const parsed = url.parse(req.url,true);
-        //console.log(parsed);
+       // console.log(parsed);
 
     }
     next()
@@ -34,6 +34,8 @@ app.use((req, res, next) => {
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/get_request/', indexRouter);
+app.use('/post_request/', indexRouter);
 
 
 // catch 404 and forward to error handler

@@ -1,7 +1,7 @@
 const request = require('supertest');
 const app = require('../app');
 const Func1 = require('../controllers/TaskA.controller');
-//const fetchMock = require( 'jest-fetch-mock');
+const fetchMock = require( 'jest-fetch-mock');
 
 fetchMock.enableMocks();
 
